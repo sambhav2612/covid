@@ -182,7 +182,7 @@ function App() {
                   </Card>
                 </Col>
                 <Col span={14}>
-                  <ReactFC type="pie2d" width="340" dataFormat="json" dataSource={{
+                  <ReactFC type="pie2d" width="100%" height="100%" dataFormat="json" dataSource={{
                     chart: {
                       caption: "COVID-19 Reported Cases",
                       subCaption: "In M = One Million Cases",
