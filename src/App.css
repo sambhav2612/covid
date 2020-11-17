@@ -1,3 +1,4 @@
 .column {
-    height: 525px !important;
+    flex: 1;
+    min-height: 525px !important;
 }

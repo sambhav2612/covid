@@ -133,13 +133,13 @@ function App() {
   };
 
   return (
-    <Layout className="layout">
-      <Layout.Content style={{padding: 24}}>
+    <Layout>
+      <Layout.Content>
         <Row gutter={[8, 8]}>
-          <Col span={12} className="column">
+          <Col span={12} xs={12} sm={12} md={12} lg={12} xl={12} xxl={12} className="column">
             <Card title="Cases At A Glance" className="column">
               <Row gutter={[8, 8]}>
-                <Col span={10}>
+                <Col span={10} xs={10} sm={10} md={10} lg={10} xl={10} xxl={10}>
                   {/*// @ts-ignore*/}
                   <Card style={gridStyle}>
                     <Statistic
@@ -181,7 +181,7 @@ function App() {
                     />
                   </Card>
                 </Col>
-                <Col span={14}>
+                <Col span={14} xs={14} sm={14} md={14} lg={14} xl={14} xxl={14}>
                   <ReactFC type="pie2d" width="100%" height="100%" dataFormat="json" dataSource={{
                     chart: {
                       caption: "COVID-19 Reported Cases",
@@ -205,7 +205,7 @@ function App() {
               </Row>
             </Card>
           </Col>
-          <Col span={12} className="column">
+          <Col span={12} xs={12} sm={12} md={12} lg={12} xl={12} xxl={12} className="column">
             <Card title="Cases Country-Wise">
               <Table columns={columns} dataSource={tableSource} scroll={{y: 300}}/>
             </Card>
